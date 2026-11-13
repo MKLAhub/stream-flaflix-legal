@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · Stream-Flaflix</title>
+  <meta name="description" content="How Stream-Flaflix uses optional Google Drive access for encrypted backups.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Stream-Flaflix</p>
+    <h1>Privacy policy</h1>
+    <p class="muted">Last updated: November 12, 2026</p>
+    <p>Stream-Flaflix is self-hosted software. The operator of this instance controls the data stored in it and decides whether to connect Google Drive.</p>
+
+    <h2>Google Drive access</h2>
+    <p>When the operator connects Google Drive, Stream-Flaflix uses the authorized Google account only to create, list, download and delete its own encrypted <code>.sqlite.zip</code> backup files in the folder the operator selected. It does not read, modify or share other Google Drive files.</p>
+
+    <h2>Credentials and backups</h2>
+    <p>The OAuth client secret and refresh token are stored encrypted at rest with the server's <code>SECRET_KEY</code>. Short-lived access tokens are held in memory for uploads. Backup archives are encrypted with <code>BACKUP_ENCRYPTION_KEY</code> before they leave the server; that key remains on the server and with the operator.</p>
+
+    <h2>Data sharing</h2>
+    <p>Google user data is not sold, used for advertising, or shared with third parties. It is not used to train AI models. Stream-Flaflix's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Drive copies follow the retention setting in the dashboard. The operator can delete them from the backup screen or revoke the app's access from the Google Account third-party connections page.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this instance should be directed to its operator. <a href="index.html">About Stream-Flaflix</a></p>
+  </main>
+</body>
+</html>
